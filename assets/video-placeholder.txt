@@ -1,0 +1,15 @@
+🎬 PLACEHOLDER PARA VIDEO
+
+Para que tu sitio web funcione correctamente, necesitas:
+
+1. Agregar tu archivo de video aquí con el nombre: video.mp4
+   (También puedes usar video.webm como alternativa)
+
+2. El video debería tener:
+   - Buena calidad pero optimizado para web
+   - Duración apropiada (recomendado: 30 segundos - 5 minutos)
+   - Tamaño menor a 50MB si es posible
+
+3. Una vez agregado, elimina este archivo placeholder
+
+¡Tu video será la estrella del sitio! 🌟 
