@@ -42,15 +42,10 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    // Animación adicional cuando el video comienza a reproducirse
-    const video = document.getElementById('main-video');
-    
-    video.addEventListener('play', function() {
-        // Mostrar el icono con una animación después de 3 segundos
-        setTimeout(() => {
-            giftIcon.style.animation = 'pulse 2s infinite, bounce 1s ease-out';
-        }, 3000);
-    });
+    // Animación para el icono de regalo después de unos segundos
+    setTimeout(() => {
+        giftIcon.style.animation = 'pulse 2s infinite, bounce 1s ease-out';
+    }, 3000);
 
     // Animación de rebote para el icono
     const style = document.createElement('style');
@@ -123,5 +118,5 @@ document.addEventListener('DOMContentLoaded', function() {
     giftIcon.removeEventListener('click', originalOpenModal);
     giftIcon.addEventListener('click', openModal);
 
-    console.log('🎁 Sariti Gift cargado correctamente - ¡Busca el regalo!');
+    console.log('🎁 Sariti Gift cargado correctamente con YouTube - ¡Busca el regalo!');
 }); 
