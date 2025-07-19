@@ -148,54 +148,42 @@ body {
 }
 
 /* Icono grande del regalo en el modal */
-.gift-icon-large {
+.gift-image {
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 20px 0;
-    animation: giftPulse 2s ease-in-out infinite;
+    animation: imageAppear 0.8s ease-in-out;
+    width: 100%;
 }
 
-.gift-icon-large svg {
-    filter: drop-shadow(0 10px 20px rgba(255, 107, 107, 0.3));
+.gift-image img {
+    max-width: 100%;
+    max-height: 70vh;
+    width: auto;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease;
+    object-fit: contain;
 }
 
-.gift-icon-large:hover svg {
-    transform: scale(1.1) rotate(5deg);
+.gift-image:hover img {
+    transform: scale(1.02);
 }
 
-@keyframes giftPulse {
-    0%, 100% {
+@keyframes imageAppear {
+    0% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    100% {
+        opacity: 1;
         transform: scale(1);
     }
-    50% {
-        transform: scale(1.05);
-    }
 }
 
-.modal-text h2 {
-    color: #333;
-    font-size: 2rem;
-    margin: 20px 0 10px;
-    background: linear-gradient(45deg, #667eea, #764ba2);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
 
-.modal-text p {
-    color: #666;
-    font-size: 1.2rem;
-    font-weight: 300;
-}
-
-.gift-message {
-    color: #ff6b6b !important;
-    font-weight: 400 !important;
-    font-size: 1.1rem !important;
-    margin-top: 15px;
-}
 
 /* Responsive */
 @media (max-width: 768px) {
@@ -236,12 +224,9 @@ body {
         width: 95%;
     }
     
-    .modal-text h2 {
-        font-size: 1.5rem;
-    }
-    
-    .modal-text p {
-        font-size: 1rem;
+    .gift-image img {
+        max-height: 60vh;
+        border-radius: 10px;
     }
 }
 
@@ -280,6 +265,11 @@ body {
     .modal-content {
         margin: 15% auto;
         padding: 25px 15px;
+    }
+    
+    .gift-image img {
+        max-height: 50vh;
+        border-radius: 8px;
     }
     
     .close {
